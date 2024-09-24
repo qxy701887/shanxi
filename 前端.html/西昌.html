@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西昌旅游攻略</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .photo-gallery {
+            display: flex;
+            /* 使用flex布局 */
+            flex-wrap: nowrap;
+            /*不换行*/
+            overflow-x: auto;
+            /*添加水平滚轮条*/
+
+        }
+
+        .photo-gallery img {
+            margin-right: 20px;
+            /* 设置图片间距 */
+            max-width: 100%;
+            /* 确保图片不会超出容器 */
+            max-width: 500px;
+            max-height: 400px;
+            /*设置图片大小*/
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>西昌旅游攻略</h1>
+        <nav>
+            <ul>
+                <li><a href="#sights">景点</a></li>
+                <li><a href="#accommodation">住宿</a></li>
+                <li><a href="#transportation">交通</a></li>
+                <li><a href="#experience">感受</a></li>
+                <li><a href="#photos">风景照片</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sights">
+
+        <h2>景点信息</h2>
+        <div class="card">
+            <img src="qinghai.jpg" alt="邛海">
+            <h3>邛海</h3>
+            <p>简介：美丽的湖泊，适合游玩和拍照。</p>
+            <p>开放时间：全天开放</p>
+            <p>门票：免费</p>
+            <div class="photo-gallery">
+                <img src="西昌照片/QQ图片20240923094504.jpg" alt="邛海照片1">
+                <img src="西昌照片/QQ图片20240923094617.jpg" alt="邛海照片2">
+                <img src="西昌照片/QQ图片20240923094625.jpg" alt="邛海照片3">
+                <img src="西昌照片/QQ图片20240923094651.jpg" alt="邛海照片4">
+            </div>
+        </div>
+        <div class="card">
+            <img src="lushan.jpg" alt="泸山">
+            <h3>泸山</h3>
+            <p>简介：有着丰富的文化和自然景观。</p>
+            <p>开放时间：08:00-18:00</p>
+            <p>门票：20元</p>
+        </div>
+    </section>
+
+    <section id="accommodation">
+        <h2>住宿推荐</h2>
+        <div class="card">
+            <img src="hotel1.jpg" alt="西昌大酒店">
+            <h3>西昌大酒店</h3>
+            <p>地址：市中心，交通便利</p>
+            <p>价格范围：300-600元/晚</p>
+            <p>用户评价：干净舒适，服务热情。</p>
+        </div>
+        <div class="card">
+            <img src="hotel2.jpg" alt="泸沽湖民宿">
+            <h3>泸沽湖民宿</h3>
+            <p>地址：靠近泸沽湖，环境优雅</p>
+            <p>价格范围：200-400元/晚</p>
+            <p>用户评价：非常有地方特色。</p>
+        </div>
+    </section>
+
+    <section id="transportation">
+        <h2>交通信息</h2>
+        <p>可选择公交、出租车或租车游玩。</p>
+        <p>从西昌机场到市区：可乘坐机场大巴，约40分钟。</p>
+    </section>
+
+    <section id="experience">
+        <h2>个人感受</h2>
+        <p>“西昌的夜晚非常迷人，邛海的湖水在灯光下波光粼粼。”</p>
+        <p>“泸山的日出令人陶醉，是不可错过的美景。”</p>
+    </section>
+
+    <section id="photos">
+        <h2>风景照片</h2>
+        <div class="photo-gallery">
+            <img src="landscape1.jpg" alt="风景1">
+            <img src="landscape2.jpg" alt="风景2">
+            <img src="landscape3.jpg" alt="风景3">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 西昌旅游攻略</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子边框</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            /* border-width 边框的粗细 一般情况下都用px*/
+
+            border: width 5px;
+
+            /*border-style 边框的样式  solid 实线边框   dashed 虚线边框  dotted 点线边框*/
+            /*border-style:solid*/
+            /*border-style:ashed*/
+            /*border-style:dotted*/
+
+            border-color: aqua;
+
+
+
+            /*复合写法*/
+
+            border: 1px solid red;
+            /*没有顺序*/
+
+            /*上边框*/
+            border-top: 5px solid pink;
+
+            /*下边框*/
+            border-bottom: 10px dashed purple;
+
+            table,
+            td,
+            th {
+                /*合并相邻的边框*/
+                border-collapse: collapse;
+                font-size: 14px;
+                text-align: center;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <table align="center" cellspacing="0">
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+            </tr>
+        </thead>
+
+    </table>
+
+</body>
+
+</html>
